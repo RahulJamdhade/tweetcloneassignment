@@ -1,0 +1,60 @@
+POST http://localhost:4000/register/
+Content-Type: application/json
+
+{
+  "username": "rahul_jamdhade",
+  "password": "Rahul@2611",
+  "name": "Rahul Jamdhade",
+  "gender": "male"
+}
+###
+
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+GET http://localhost:4000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/tweets/2/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+GET http://localhost:4000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
+
+POST http://localhost:4000/user/tweets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+
+{
+   "tweet": "The Mornings..."
+}
+###
+
+DELETE http://localhost:4000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc4MDA1NTAwfQ.Ag2mCI3Kr3eZMXtzGH7_TMxVPW905k_q5MuwABjjyVA
+###
